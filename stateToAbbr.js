@@ -65,9 +65,8 @@ function stateNameToAbbreviation(name) {
     .trim()
     .replace(/[^\w ]/g, "")
     .toLowerCase(); //Trim, remove all non-word characters with the exception of spaces, and convert to lowercase
-  if (states[a] !== null) {
-    return states[a];
-  }
-
-  return null;
+  //   if (states[a] !== null) {
+  //     return states[a];
+  //   }
+  return states[a] ? states[a] : name;
 }

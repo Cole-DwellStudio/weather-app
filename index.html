@@ -13,13 +13,13 @@
       class="font-Dela mx-auto text-center text-4xl text-white mt-4 mb-6"
       id="text-mint"
     >
-      GIF Forecast
+      GIF Weather
     </h1>
     <div class="w-full flex flex-col my-4">
-      <img src="" alt="" class="" id="gifToday" />
+      <img src="" alt="" class="mx-auto h-96 object-cover px-4" id="gifToday" />
       <span
         id="locationName"
-        class="font-Dela text-3xl text-center text-emerald-100 opacity-75"
+        class="font-Dela text-3xl text-center text-emerald-100 opacity-75 my-2"
         >Location</span
       >
       <ul id="gifWeek"></ul>
@@ -27,21 +27,21 @@
     <form
       id="locationForm"
       action="submit"
-      class="flex flex-col justify-center align-middle text-center"
+      class="flex flex-col justify-center align-middle text-center my-8"
     >
       <input
         type="text"
         placeholder="Location"
         name="city"
         id="locationInput"
-        class="ring-2 placeholder:font-Unbounded placeholder:text-gray-400 ring-black font-Dela focus:outline-none mx-auto px-2"
+        class="ring-2 placeholder:font-Unbounded placeholder:text-gray-400 ring-black font-Dela focus:outline-none mx-auto px-3 py-1"
       />
       <button
         type="submit"
-        class="ring-2 ring-black rounded-md font-Unbounded bg-yellow-200 mx-auto my-4 px-7 py-1 hover:bg-yellow-300"
+        class="ring-2 ring-black rounded-md font-Unbounded bg-yellow-200 mx-auto my-3 px-7 py-1 hover:bg-yellow-300"
         id="locationButton"
       >
-        Submit
+        Search
       </button>
     </form>
   </body>
