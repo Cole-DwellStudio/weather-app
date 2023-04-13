@@ -82,4 +82,4 @@ async function fetchGif(searchTerm) {
   }
 }
 
-getWeather("San Francisco");
+getWeather("Ittoqqortoormiit");
