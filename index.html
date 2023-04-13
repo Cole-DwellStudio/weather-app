@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="app.js" defer type="module"></script>
+  </head>
+  <body class="bg-gradient-to-r from-cyan-300 to-fuchsia-500">
+    <h1
+      class="font-Dela mx-auto text-center text-4xl text-white mt-4 mb-6"
+      id="text-mint"
+    >
+      GIF Forecast
+    </h1>
+    <div class="w-full flex flex-col my-4">
+      <img src="" alt="" class="" id="gifToday" />
+      <span
+        id="locationName"
+        class="font-Dela text-3xl text-center text-emerald-100 opacity-75"
+        >Location</span
+      >
+      <ul id="gifWeek"></ul>
+    </div>
+    <form
+      id="locationForm"
+      action="submit"
+      class="flex flex-col justify-center align-middle text-center"
+    >
+      <input
+        type="text"
+        placeholder="Location"
+        name="city"
+        id="locationInput"
+        class="ring-2 placeholder:font-Unbounded placeholder:text-gray-400 ring-black font-Dela focus:outline-none mx-auto px-2"
+      />
+      <button
+        type="submit"
+        class="ring-2 ring-black rounded-md font-Unbounded bg-yellow-200 mx-auto my-4 px-7 py-1 hover:bg-yellow-300"
+        id="locationButton"
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
